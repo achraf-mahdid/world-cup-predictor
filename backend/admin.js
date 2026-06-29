@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://world-cup-predictor-fqgt.onrender.com/api";
 const ADMIN_PASSWORD = "worldcup2026";
 
 async function loadAdminMatches() {
