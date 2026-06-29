@@ -109,14 +109,3 @@ async function loadLeaderboard() {
     document.getElementById("leaderboard-body").appendChild(row);
   });
 }
-
-  leaderboard.forEach((entry, index) => {
-    const row = document.createElement("div");
-    row.className = "leaderboard-row";
-    row.innerHTML = `
-      <span class="rank">#${index + 1}</span>
-      <span class="name">${entry.playerName}</span>
-      <span class="points">${entry.points} pts</span>
-    `;
-    container.appendChild(row);
-  });
