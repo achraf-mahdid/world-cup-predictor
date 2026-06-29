@@ -120,4 +120,3 @@ async function loadLeaderboard() {
     `;
     container.appendChild(row);
   });
-}
