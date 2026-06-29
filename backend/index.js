@@ -14,6 +14,11 @@ mongoose.connect(process.env.MONGODB_URI)
   .then(() => console.log("Connected to MongoDB!"))
   .catch((err) => console.log("MongoDB connection error:", err));
 
+// routes
+app.use("/api/matches", require("./routes/matches"));
+app.use("/api/predictions", require("./routes/predictions"));
+app.use("/api/leaderboard", require("./routes/leaderboard"));
+
 app.get("/", (req, res) => {
   res.send("World Cup Predictor API is running!");
 });
