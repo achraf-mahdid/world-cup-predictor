@@ -34,4 +34,19 @@ router.post("/", async (req, res) => {
   }
 });
 
+// Update match result
+router.put("/:matchId/result", async (req, res) => {
+  try {
+    const match = await Match.findOneAndUpdate(
+      { matchId: req.params.matchId },
+      { ...req.body },
+      { new: true }
+    );
+    if (!match) return res.status(404).json({ error: "Match not found" });
+    res.json({ message: "Result updated!", match });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 module.exports = router;

@@ -5,6 +5,7 @@ const matchSchema = new mongoose.Schema({
   homeTeam: { type: String, required: true },
   awayTeam: { type: String, required: true },
   kickoff: { type: Date, required: true },
+  round: { type: String, default: "Round of 32" },
   homeScore: { type: Number, default: null },
   awayScore: { type: Number, default: null },
   finished: { type: Boolean, default: false }
