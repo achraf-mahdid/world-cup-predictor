@@ -77,12 +77,38 @@ async function loadLeaderboard() {
   const leaderboard = await response.json();
 
   const container = document.getElementById("leaderboard-container");
-  container.innerHTML = "<h2>Leaderboard</h2>";
+  container.innerHTML = `
+    <h2>Leaderboard</h2>
+    <table class="leaderboard-table">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Name</th>
+          <th>Predicted</th>
+          <th>Points</th>
+        </tr>
+      </thead>
+      <tbody id="leaderboard-body"></tbody>
+    </table>
+  `;
 
   if (leaderboard.length === 0) {
-    container.innerHTML += "<p>No points yet. Predictions will be scored after matches finish!</p>";
+    document.getElementById("leaderboard-body").innerHTML = 
+      "<tr><td colspan='4'>No points yet. Predictions will be scored after matches finish!</td></tr>";
     return;
   }
+
+  leaderboard.forEach((entry, index) => {
+    const row = document.createElement("tr");
+    row.innerHTML = `
+      <td>#${index + 1}</td>
+      <td>${entry.playerName}</td>
+      <td>${entry.gamesPlayed}</td>
+      <td>${entry.points} pts</td>
+    `;
+    document.getElementById("leaderboard-body").appendChild(row);
+  });
+}
 
   leaderboard.forEach((entry, index) => {
     const row = document.createElement("div");

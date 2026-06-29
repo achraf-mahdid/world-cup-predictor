@@ -150,6 +150,27 @@ button:hover {
   font-size: 16px;
 }
 
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.leaderboard-table th {
+  background-color: #0f3460;
+  padding: 12px;
+  text-align: left;
+  color: #e94560;
+}
+
+.leaderboard-table td {
+  padding: 12px;
+  border-bottom: 1px solid #0f3460;
+}
+
+.leaderboard-table tr:hover {
+  background-color: #0f3460;
+}
 .points {
   font-weight: bold;
   color: #e94560;
