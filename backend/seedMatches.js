@@ -14,12 +14,12 @@ const matches = [
   { matchId: "M80", homeTeam: "England", awayTeam: "DR Congo", kickoff: new Date("2026-07-01T16:00:00Z"), round: "Round of 32" },
   { matchId: "M81", homeTeam: "Belgium", awayTeam: "Senegal", kickoff: new Date("2026-07-01T20:00:00Z"), round: "Round of 32" },
   { matchId: "M82", homeTeam: "USA", awayTeam: "Bosnia & Herzegovina", kickoff: new Date("2026-07-02T00:00:00Z"), round: "Round of 32" },
-  { matchId: "M83", homeTeam: "Spain", awayTeam: "Austria", kickoff: new Date("2026-07-02T16:00:00Z"), round: "Round of 32" },
-  { matchId: "M84", homeTeam: "Argentina", awayTeam: "Cape Verde", kickoff: new Date("2026-07-02T20:00:00Z"), round: "Round of 32" },
-  { matchId: "M85", homeTeam: "Portugal", awayTeam: "Croatia", kickoff: new Date("2026-07-03T00:00:00Z"), round: "Round of 32" },
-  { matchId: "M86", homeTeam: "Australia", awayTeam: "Egypt", kickoff: new Date("2026-07-03T16:00:00Z"), round: "Round of 32" },
-  { matchId: "M87", homeTeam: "Switzerland", awayTeam: "Algeria", kickoff: new Date("2026-07-03T20:00:00Z"), round: "Round of 32" },
-  { matchId: "M88", homeTeam: "Colombia", awayTeam: "Ghana", kickoff: new Date("2026-07-04T00:00:00Z"), round: "Round of 32" },
+  { matchId: "M83", homeTeam: "Spain", awayTeam: "Austria", kickoff: new Date("2026-07-02T19:00:00Z"), round: "Round of 32" },
+  { matchId: "M85", homeTeam: "Portugal", awayTeam: "Croatia", kickoff: new Date("2026-07-02T23:00:00Z"), round: "Round of 32" },
+  { matchId: "M84", homeTeam: "Switzerland", awayTeam: "Algeria", kickoff: new Date("2026-07-03T03:00:00Z"), round: "Round of 32" },
+  { matchId: "M86", homeTeam: "Australia", awayTeam: "Egypt", kickoff: new Date("2026-07-03T18:00:00Z"), round: "Round of 32" },
+  { matchId: "M87", homeTeam: "Argentina", awayTeam: "Cape Verde", kickoff: new Date("2026-07-03T22:00:00Z"), round: "Round of 32" },
+  { matchId: "M88", homeTeam: "Colombia", awayTeam: "Ghana", kickoff: new Date("2026-07-04T01:30:00Z"), round: "Round of 32" },
 ];
 
 const seed = async () => {

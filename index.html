@@ -1,38 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>World Cup Predictor</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>World Cup Predictor 2026</h1>
-        <p>Welcome to the prediction game!</p>
-        <p>Enter your prediction below</p>
+  <head>
+    <title>World Cup Predictor 2026</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>⚽ World Cup Predictor 2026</h1>
+      <p class="subtitle">Enter your name and predict the knockout stage results</p>
 
-  <div class="form-card">
-    <h2>France vs Brazil</h2>
-    <p class="match-info">Round of 16 • 28 June 2026</p>
-
-    <div class="prediction-form">
-      <input type="text" id="playerName" placeholder="Your name" />
-
-      <div class="score-inputs">
-        <div class="team">
-          <span>France</span>
-          <input type="number" id="score1" min="0" max="20" placeholder="0" />
-        </div>
-        <span class="vs">VS</span>
-        <div class="team">
-          <input type="number" id="score2" min="0" max="20" placeholder="0" />
-          <span>Brazil</span>
-        </div>
+      <div class="name-section">
+        <input type="text" id="playerName" placeholder="Enter your name..." />
+        <button onclick="loadMatches()">Let's Go!</button>
       </div>
 
-      <button onclick="submitPrediction()">Submit Prediction</button>
+      <div id="matches-container"></div>
+      <div id="leaderboard-container"></div>
     </div>
-  </div>
-</div>
 
-<script src="app.js"></script>
-    </body>
-</html> 
+    <script src="app.js"></script>
+  </body>
+</html>
