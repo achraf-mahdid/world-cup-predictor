@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #1a1a2e;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+h1 {
+    color: #e94560;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+p {
+    color: #aaaaaa;
+    font-size: 18px;
+}
