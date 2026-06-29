@@ -7,5 +7,32 @@
     <body>
         <h1>World Cup Predictor 2026</h1>
         <p>Welcome to the prediction game!</p>
+        <p>Enter your prediction below</p>
+
+  <div class="form-card">
+    <h2>France vs Brazil</h2>
+    <p class="match-info">Round of 16 • 28 June 2026</p>
+
+    <div class="prediction-form">
+      <input type="text" id="playerName" placeholder="Your name" />
+
+      <div class="score-inputs">
+        <div class="team">
+          <span>France</span>
+          <input type="number" id="score1" min="0" max="20" placeholder="0" />
+        </div>
+        <span class="vs">VS</span>
+        <div class="team">
+          <input type="number" id="score2" min="0" max="20" placeholder="0" />
+          <span>Brazil</span>
+        </div>
+      </div>
+
+      <button onclick="submitPrediction()">Submit Prediction</button>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
     </body>
-</html>
+</html> 
