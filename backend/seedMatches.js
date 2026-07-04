@@ -20,6 +20,14 @@ const matches = [
   { matchId: "M86", homeTeam: "Australia", awayTeam: "Egypt", kickoff: new Date("2026-07-03T18:00:00Z"), round: "Round of 32" },
   { matchId: "M87", homeTeam: "Argentina", awayTeam: "Cape Verde", kickoff: new Date("2026-07-03T22:00:00Z"), round: "Round of 32" },
   { matchId: "M88", homeTeam: "Colombia", awayTeam: "Ghana", kickoff: new Date("2026-07-04T01:30:00Z"), round: "Round of 32" },
+  { matchId: "R16-1", homeTeam: "Canada", awayTeam: "Morocco", kickoff: new Date("2026-07-04T17:00:00Z"), round: "Round of 16" },
+ { matchId: "R16-2", homeTeam: "Paraguay", awayTeam: "France", kickoff: new Date("2026-07-04T21:00:00Z"), round: "Round of 16" },
+ { matchId: "R16-3", homeTeam: "Brazil", awayTeam: "Norway", kickoff: new Date("2026-07-05T20:00:00Z"), round: "Round of 16" },
+ { matchId: "R16-4", homeTeam: "Mexico", awayTeam: "England", kickoff: new Date("2026-07-06T00:00:00Z"), round: "Round of 16" },
+ { matchId: "R16-5", homeTeam: "Portugal", awayTeam: "Spain", kickoff: new Date("2026-07-06T19:00:00Z"), round: "Round of 16" },
+ { matchId: "R16-6", homeTeam: "USA", awayTeam: "Belgium", kickoff: new Date("2026-07-07T00:00:00Z"), round: "Round of 16" },
+ { matchId: "R16-7", homeTeam: "Argentina", awayTeam: "Egypt", kickoff: new Date("2026-07-07T16:00:00Z"), round: "Round of 16" },
+ { matchId: "R16-8", homeTeam: "Switzerland", awayTeam: "Colombia", kickoff: new Date("2026-07-07T20:00:00Z"), round: "Round of 16" },
 ];
 
 const seed = async () => {
