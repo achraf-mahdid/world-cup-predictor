@@ -30,18 +30,20 @@ router.get("/", async (req, res) => {
       const actualHomeDiff = match.homeScore - match.awayScore;
       const predHomeDiff = pred.homeScore - pred.awayScore;
 
+     const multiplier = (match.round === "Semi Final" || match.round === "Third Place" || match.round === "Final") ? 2 : 1;
+
       if (pred.homeScore === match.homeScore && pred.awayScore === match.awayScore) {
-        scores[pred.playerName].points += 3;
+        scores[pred.playerName].points += 3 * multiplier;
         scores[pred.playerName].exactScores += 1;
       } else if (predHomeDiff === actualHomeDiff) {
-        scores[pred.playerName].points += 2;
+        scores[pred.playerName].points += 2 * multiplier;
         scores[pred.playerName].correctGoalDiff += 1;
       } else if (
         (predHomeDiff > 0 && actualHomeDiff > 0) ||
         (predHomeDiff < 0 && actualHomeDiff < 0) ||
         (predHomeDiff === 0 && actualHomeDiff === 0)
       ) {
-        scores[pred.playerName].points += 1;
+        scores[pred.playerName].points += 1 * multiplier;
         scores[pred.playerName].correctOutcomes += 1;
       }
     });
