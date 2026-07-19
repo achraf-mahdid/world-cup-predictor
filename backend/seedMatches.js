@@ -34,6 +34,7 @@ const matches = [
   { matchId: "QF4", homeTeam: "Argentina", awayTeam: "Switzerland", kickoff: new Date("2026-07-12T01:00:00Z"), round: "Quarter Final" },
   { matchId: "SF1", homeTeam: "France", awayTeam: "Spain", kickoff: new Date("2026-07-14T20:00:00Z"), round: "Semi Final" },
   { matchId: "SF2", homeTeam: "England", awayTeam: "Argentina", kickoff: new Date("2026-07-15T20:00:00Z"), round: "Semi Final" },
+  { matchId: "F", homeTeam: "Spain", awayTeam: "Argentina", kickoff: new Date("2026-07-19T20:00:00Z"), round: "Final" },
 ];
 
 const seed = async () => {
